@@ -1,0 +1,60 @@
+body{
+    background-color: #24323D;
+}
+.nav-tabs {
+    margin-top: 20%;
+}
+.nav-tabs a{
+    border: 0px !important;
+    color: #1AB188;
+    transition: all 0.20s ease;
+}
+.nav-tabs a:hover,.nav-tabs a:focus{
+    color: #fff;
+    background-color: #1AB188 !important;
+}
+.nav-tabs h3{
+    margin: 0px !important;
+}
+.activeCustom{
+    color: #fff !important;
+    background-color: #1AB188;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    color: #fff;
+    background-color: #1AB188;
+}
+#signUp{
+    margin-top: 50px;
+}
+#signUp input,#signIn input{
+    background-color: transparent;
+    border: 0px;
+    transition: all 0.40s ease-in-out;
+    margin: 10px 0px;
+    color: #AAA;
+}
+#signUp input:focus,#signIn input:focus{
+    box-shadow: 0px 0px;
+    -webkit-box-shadow: 0px;
+    border-bottom: 2px solid #1AB188;
+    color: #fff;
+}
+input::-webkit-input-placeholder,#signIn input::focus{
+    font-size: 110%;
+    color: #AAA;
+}
+input:focus::-webkit-input-placeholder{
+    color: #fff;
+}
+#signUp button,#signIn button{
+    background-color: #34495e;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 125%;
+    outline: none;
+    transition: all 0.20s ease-in-out;
+}
+#signUp button:hover,#signIn button:hover{
+    background-color: #2c3e50;
+}

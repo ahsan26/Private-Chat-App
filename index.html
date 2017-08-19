@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Private ChatApp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/styles.css" />
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs nav-justified">
+            <li class="active">
+                <a data-toggle="tab" href="#signUp">
+                    <h3>Sign Up</h3>
+                </a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#signIn">
+                    <h3>Sign In</h3>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="signUp" class="tab-pane fade active in">
+                <form action="JavaScript:void(0)" onsubmit="signUp();">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" id="first_name" class="form-control" placeholder="First Name" required />
+                            <span class="underline  "></span>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="last_name" class="form-control" placeholder="Last Name" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="text" id="username" class="form-control" placeholder="Username" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="email" id="email" class="form-control" placeholder="Email" required />
+                            <span class="form-static text-danger" id="signUp_email_indicator"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="password" id="password" class="form-control" placeholder="Password" required />
+                            <span class="form-static text-danger" id="signUp_password_indicator"></span>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-block">SignUp</button>
+                </form>
+                </div>
+            </div>
+            <div id="signIn" class="tab-pane fade">
+                <form action="JavaScript:void(0)" onsubmit="signIn();">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="text" id="signInEmail" class="form-control" placeholder="Email" required />
+                            <span class="form-static text-danger" id="sigin_email"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="password" id="sigin_password" class="form-control" placeholder="Password" required />
+                            <span class="form-static text-danger" id="sigin_password_indicator"></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-block">SignIn</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script src="resources/database.js"></script>
+    <script src="resources/app.js"></script>
+</body>
+
+</html>
