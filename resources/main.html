@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Private Chat App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="main_styles.css" />
 </head>
+
 <body>
-    
+    <div class="container-fluid">
+        <div class="row">
+            <div id="users" class="col-md-2" style="height: 700px;">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <h2>Users</h2>
+                    </div>
+                </div>
+                <div class="row user_container">
+                    <div class="col-xs-2">
+                        <div class="user_logo">A</div>
+                    </div>
+                    <div class="col-xs-10">
+                        <h4>Ahsan</h4>
+                        <p>Last Message</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 meessage_container">
+                <h1>Messages</h1>
+            </div>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script src="database.js"></script>
+    <script src="app.js"></script>
+    <script>
+
+    </script>
 </body>
+
 </html>
